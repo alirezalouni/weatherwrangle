@@ -1,0 +1,42 @@
+<svg width="800" height="500" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .grid { stroke: #ddd; }
+    .axis { stroke: black; stroke-width: 2; }
+    .bar { fill: steelblue; stroke: black; stroke-width: 0.5; }
+    .grid-text { font-size: 11px; text-anchor: middle; }
+    .title { font-size: 18px; font-weight: bold; text-anchor: middle; }
+    .label { font-size: 14px; font-weight: bold; }
+    .value-text { font-size: 12px; font-weight: bold; text-anchor: middle; }
+  </style>
+
+  <!-- Title -->
+  <text x="400.0" y="30" class="title">Distribution of Forecast Lengths (n=22,635 cities)</text>
+
+  <!-- Y-axis label -->
+  <text x="20" y="250.0" text-anchor="middle" transform="rotate(-90 20 250.0)" class="label">Number of Cities</text>
+
+  <!-- X-axis label -->
+  <text x="400.0" y="490" text-anchor="middle" class="label">Forecast Length (number of days)</text>
+
+  <!-- Axes -->
+  <line x1="80" y1="80" x2="80" y2="420" class="axis"/>
+  <line x1="80" y1="420" x2="720" y2="420" class="axis"/>
+  <line x1="80" y1="420.0" x2="720" y2="420.0" class="grid" stroke-dasharray="2,2"/>
+  <text x="70" y="424.0" text-anchor="end" class="grid-text">0</text>
+  <line x1="80" y1="352.0" x2="720" y2="352.0" class="grid" stroke-dasharray="2,2"/>
+  <text x="70" y="356.0" text-anchor="end" class="grid-text">3,177</text>
+  <line x1="80" y1="284.0" x2="720" y2="284.0" class="grid" stroke-dasharray="2,2"/>
+  <text x="70" y="288.0" text-anchor="end" class="grid-text">6,354</text>
+  <line x1="80" y1="216.0" x2="720" y2="216.0" class="grid" stroke-dasharray="2,2"/>
+  <text x="70" y="220.0" text-anchor="end" class="grid-text">9,531</text>
+  <line x1="80" y1="148.0" x2="720" y2="148.0" class="grid" stroke-dasharray="2,2"/>
+  <text x="70" y="152.0" text-anchor="end" class="grid-text">12,708</text>
+  <line x1="80" y1="80.0" x2="720" y2="80.0" class="grid" stroke-dasharray="2,2"/>
+  <text x="70" y="84.0" text-anchor="end" class="grid-text">15,886</text>
+  <rect x="128.0" y="80.0" width="224.0" height="340.0" class="bar"/>
+  <text x="240.0" y="75.0" class="value-text">15,886</text>
+  <text x="240.0" y="440" class="grid-text">16</text>
+  <rect x="448.0" y="275.55457635654034" width="224.0" height="144.44542364345966" class="bar"/>
+  <text x="560.0" y="270.55457635654034" class="value-text">6,749</text>
+  <text x="560.0" y="440" class="grid-text">17</text>
+</svg>

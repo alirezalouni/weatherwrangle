@@ -1,0 +1,67 @@
+<svg width="1000" height="500" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .grid { stroke: #ddd; }
+    .axis { stroke: black; stroke-width: 2; }
+    .line-min { stroke: blue; stroke-width: 2; fill: none; }
+    .line-max { stroke: red; stroke-width: 2; fill: none; }
+    .grid-text { font-size: 11px; text-anchor: middle; }
+    .title { font-size: 18px; font-weight: bold; text-anchor: middle; }
+    .label { font-size: 14px; font-weight: bold; }
+  </style>
+
+  <!-- Title -->
+  <text x="500.0" y="30" class="title">San Francisco (CA, US): Min/Max Daily Temperature</text>
+
+  <!-- Y-axis label -->
+  <text x="20" y="250.0" text-anchor="middle" transform="rotate(-90 20 250.0)" class="label">Temperature (°C)</text>
+
+  <!-- X-axis label -->
+  <text x="500.0" y="490" text-anchor="middle" class="label">Date</text>
+
+  <!-- Grid and axes -->
+  <line x1="80" y1="80" x2="80" y2="420" class="axis"/>
+  <line x1="80" y1="420" x2="920" y2="420" class="axis"/>
+  <line x1="80.0" y1="80" x2="80.0" y2="420" class="grid" stroke-dasharray="2,2"/>
+  <line x1="136.0" y1="80" x2="136.0" y2="420" class="grid" stroke-dasharray="2,2"/>
+  <line x1="192.0" y1="80" x2="192.0" y2="420" class="grid" stroke-dasharray="2,2"/>
+  <line x1="248.0" y1="80" x2="248.0" y2="420" class="grid" stroke-dasharray="2,2"/>
+  <line x1="304.0" y1="80" x2="304.0" y2="420" class="grid" stroke-dasharray="2,2"/>
+  <line x1="360.0" y1="80" x2="360.0" y2="420" class="grid" stroke-dasharray="2,2"/>
+  <line x1="416.0" y1="80" x2="416.0" y2="420" class="grid" stroke-dasharray="2,2"/>
+  <line x1="472.0" y1="80" x2="472.0" y2="420" class="grid" stroke-dasharray="2,2"/>
+  <line x1="528.0" y1="80" x2="528.0" y2="420" class="grid" stroke-dasharray="2,2"/>
+  <line x1="584.0" y1="80" x2="584.0" y2="420" class="grid" stroke-dasharray="2,2"/>
+  <line x1="640.0" y1="80" x2="640.0" y2="420" class="grid" stroke-dasharray="2,2"/>
+  <line x1="696.0" y1="80" x2="696.0" y2="420" class="grid" stroke-dasharray="2,2"/>
+  <line x1="752.0" y1="80" x2="752.0" y2="420" class="grid" stroke-dasharray="2,2"/>
+  <line x1="808.0" y1="80" x2="808.0" y2="420" class="grid" stroke-dasharray="2,2"/>
+  <line x1="864.0" y1="80" x2="864.0" y2="420" class="grid" stroke-dasharray="2,2"/>
+  <line x1="920.0" y1="80" x2="920.0" y2="420" class="grid" stroke-dasharray="2,2"/>
+  <line x1="80" y1="420.0" x2="920" y2="420.0" class="grid" stroke-dasharray="2,2"/>
+  <text x="70" y="424.0" text-anchor="end" class="grid-text">3.9</text>
+  <line x1="80" y1="352.0" x2="920" y2="352.0" class="grid" stroke-dasharray="2,2"/>
+  <text x="70" y="356.0" text-anchor="end" class="grid-text">8.7</text>
+  <line x1="80" y1="284.0" x2="920" y2="284.0" class="grid" stroke-dasharray="2,2"/>
+  <text x="70" y="288.0" text-anchor="end" class="grid-text">13.5</text>
+  <line x1="80" y1="216.0" x2="920" y2="216.0" class="grid" stroke-dasharray="2,2"/>
+  <text x="70" y="220.0" text-anchor="end" class="grid-text">18.3</text>
+  <line x1="80" y1="148.0" x2="920" y2="148.0" class="grid" stroke-dasharray="2,2"/>
+  <text x="70" y="152.0" text-anchor="end" class="grid-text">23.1</text>
+  <line x1="80" y1="80.0" x2="920" y2="80.0" class="grid" stroke-dasharray="2,2"/>
+  <text x="70" y="84.0" text-anchor="end" class="grid-text">27.9</text>
+  <text x="80.0" y="440" class="grid-text">03-13</text>
+  <text x="192.0" y="440" class="grid-text">03-15</text>
+  <text x="304.0" y="440" class="grid-text">03-17</text>
+  <text x="416.0" y="440" class="grid-text">03-19</text>
+  <text x="528.0" y="440" class="grid-text">03-21</text>
+  <text x="640.0" y="440" class="grid-text">03-23</text>
+  <text x="752.0" y="440" class="grid-text">03-25</text>
+  <text x="864.0" y="440" class="grid-text">03-27</text>
+  <polyline points="80.0,335.8471760797345 136.0,369.16943521594646 192.0,352.50830564784087 248.0,330.62292358804007 304.0,382.58305647840564 360.0,344.4601328903651 416.0,326.10465116279096 472.0,378.06478405315573 528.0,409.83388704318895 584.0,420.0 640.0,400.79734219269085 696.0,361.2624584717604 752.0,397.40863787375383 808.0,357.5913621262456 864.0,395.99667774086396 920.0,416.04651162790736" class="line-min"/>
+  <polyline points="80.0,206.79401993355438 136.0,108.23920265780737 192.0,153.13953488372107 248.0,209.61794019933575 304.0,212.3006644518274 360.0,237.29235880398662 416.0,219.07807308970058 472.0,215.26578073089686 528.0,238.98671096345512 584.0,241.38704318936897 640.0,301.39534883720955 696.0,261.7192691029902 752.0,282.4750830564782 808.0,280.92192691029857 864.0,251.4119601328903 920.0,201.85215946843854" class="line-max"/>
+  <rect x="850" y="50" width="140" height="60" fill="white" stroke="black" stroke-width="1"/>
+  <line x1="860" y1="65" x2="890" y2="65" class="line-min"/>
+  <text x="895" y="70" font-size="12">Temp Min</text>
+  <line x1="860" y1="85" x2="890" y2="85" class="line-max"/>
+  <text x="895" y="90" font-size="12">Temp Max</text>
+</svg>

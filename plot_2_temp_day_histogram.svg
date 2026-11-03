@@ -1,0 +1,97 @@
+<svg width="1000" height="500" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .grid { stroke: #ddd; }
+    .axis { stroke: black; stroke-width: 2; }
+    .bar { fill: coral; stroke: black; stroke-width: 0.5; }
+    .mean-line { stroke: red; stroke-width: 2; stroke-dasharray: 4,4; }
+    .grid-text { font-size: 11px; text-anchor: middle; }
+    .title { font-size: 18px; font-weight: bold; text-anchor: middle; }
+    .label { font-size: 14px; font-weight: bold; }
+  </style>
+
+  <!-- Title -->
+  <text x="500.0" y="30" class="title">Distribution of Daytime Temperature Across All Cities (n=368,909 days)</text>
+
+  <!-- Y-axis label -->
+  <text x="20" y="250.0" text-anchor="middle" transform="rotate(-90 20 250.0)" class="label">Frequency (number of days)</text>
+
+  <!-- X-axis label -->
+  <text x="500.0" y="490" text-anchor="middle" class="label">Temperature (°C)</text>
+
+  <!-- Axes -->
+  <line x1="80" y1="80" x2="80" y2="420" class="axis"/>
+  <line x1="80" y1="420" x2="920" y2="420" class="axis"/>
+  <line x1="80" y1="420.0" x2="920" y2="420.0" class="grid" stroke-dasharray="2,2"/>
+  <text x="70" y="424.0" text-anchor="end" class="grid-text">0</text>
+  <line x1="80" y1="352.0" x2="920" y2="352.0" class="grid" stroke-dasharray="2,2"/>
+  <text x="70" y="356.0" text-anchor="end" class="grid-text">4,952</text>
+  <line x1="80" y1="284.0" x2="920" y2="284.0" class="grid" stroke-dasharray="2,2"/>
+  <text x="70" y="288.0" text-anchor="end" class="grid-text">9,905</text>
+  <line x1="80" y1="216.0" x2="920" y2="216.0" class="grid" stroke-dasharray="2,2"/>
+  <text x="70" y="220.0" text-anchor="end" class="grid-text">14,858</text>
+  <line x1="80" y1="148.0" x2="920" y2="148.0" class="grid" stroke-dasharray="2,2"/>
+  <text x="70" y="152.0" text-anchor="end" class="grid-text">19,811</text>
+  <line x1="80" y1="80.0" x2="920" y2="80.0" class="grid" stroke-dasharray="2,2"/>
+  <text x="70" y="84.0" text-anchor="end" class="grid-text">24,764</text>
+  <rect x="80.84" y="419.9725407850105" width="15.120000000000001" height="0.027459214989500887" class="bar"/>
+  <rect x="97.64" y="419.945081570021" width="15.120000000000001" height="0.05491842997900177" class="bar"/>
+  <rect x="114.44" y="420.0" width="15.120000000000001" height="0.0" class="bar"/>
+  <rect x="131.24" y="419.95881117751577" width="15.120000000000001" height="0.04118882248425133" class="bar"/>
+  <rect x="148.04" y="420.0" width="15.120000000000001" height="0.0" class="bar"/>
+  <rect x="164.84" y="419.945081570021" width="15.120000000000001" height="0.05491842997900177" class="bar"/>
+  <rect x="181.64000000000001" y="419.93135196252626" width="15.120000000000001" height="0.06864803747375223" class="bar"/>
+  <rect x="198.44000000000003" y="419.9176223550315" width="15.120000000000001" height="0.08237764496850267" class="bar"/>
+  <rect x="215.24" y="419.725407850105" width="15.120000000000001" height="0.2745921498950089" class="bar"/>
+  <rect x="232.04" y="419.395897270231" width="15.120000000000001" height="0.6041027297690196" class="bar"/>
+  <rect x="248.84" y="419.0938459053465" width="15.120000000000001" height="0.9061540946535294" class="bar"/>
+  <rect x="265.64" y="418.6133096430302" width="15.120000000000001" height="1.3866903569697948" class="bar"/>
+  <rect x="282.44" y="417.07559360361813" width="15.120000000000001" height="2.924406396381845" class="bar"/>
+  <rect x="299.23999999999995" y="412.09174608302374" width="15.120000000000001" height="7.908253916976256" class="bar"/>
+  <rect x="316.04" y="408.7829106767889" width="15.120000000000001" height="11.217089323211113" class="bar"/>
+  <rect x="332.84" y="407.6433532547246" width="15.120000000000001" height="12.3566467452754" class="bar"/>
+  <rect x="349.64" y="399.17218543046357" width="15.120000000000001" height="20.827814569536425" class="bar"/>
+  <rect x="366.44" y="388.5591988370215" width="15.120000000000001" height="31.440801162978516" class="bar"/>
+  <rect x="383.23999999999995" y="380.0193829752867" width="15.120000000000001" height="39.9806170247133" class="bar"/>
+  <rect x="400.03999999999996" y="376.02406719431434" width="15.120000000000001" height="43.97593280568567" class="bar"/>
+  <rect x="416.84" y="349.96527216927797" width="15.120000000000001" height="70.03472783072202" class="bar"/>
+  <rect x="433.64" y="325.8286221935067" width="15.120000000000001" height="94.1713778064933" class="bar"/>
+  <rect x="450.44" y="284.36520755936033" width="15.120000000000001" height="135.63479244063964" class="bar"/>
+  <rect x="467.24" y="240.14214181876918" width="15.120000000000001" height="179.85785818123082" class="bar"/>
+  <rect x="484.03999999999996" y="133.07866257470522" width="15.120000000000001" height="286.9213374252948" class="bar"/>
+  <rect x="500.84" y="80.0" width="15.120000000000001" height="340.0" class="bar"/>
+  <rect x="517.64" y="94.69068001938297" width="15.120000000000001" height="325.30931998061703" class="bar"/>
+  <rect x="534.44" y="138.39202067517368" width="15.120000000000001" height="281.6079793248263" class="bar"/>
+  <rect x="551.2400000000001" y="133.29833629462127" width="15.120000000000001" height="286.70166370537873" class="bar"/>
+  <rect x="568.0400000000001" y="177.5488612502019" width="15.120000000000001" height="242.4511387497981" class="bar"/>
+  <rect x="584.84" y="219.4928121466645" width="15.120000000000001" height="200.5071878533355" class="bar"/>
+  <rect x="601.64" y="246.12825068648038" width="15.120000000000001" height="173.87174931351962" class="bar"/>
+  <rect x="618.44" y="289.45889193991275" width="15.120000000000001" height="130.54110806008723" class="bar"/>
+  <rect x="635.24" y="309.0647714424164" width="15.120000000000001" height="110.9352285575836" class="bar"/>
+  <rect x="652.0400000000001" y="298.3144887740268" width="15.120000000000001" height="121.68551122597317" class="bar"/>
+  <rect x="668.84" y="259.7205621062833" width="15.120000000000001" height="160.27943789371668" class="bar"/>
+  <rect x="685.64" y="224.76498142464868" width="15.120000000000001" height="195.23501857535132" class="bar"/>
+  <rect x="702.44" y="175.32466483605234" width="15.120000000000001" height="244.67533516394766" class="bar"/>
+  <rect x="719.24" y="148.30479728638346" width="15.120000000000001" height="271.69520271361654" class="bar"/>
+  <rect x="736.0400000000001" y="163.4485543530932" width="15.120000000000001" height="256.5514456469068" class="bar"/>
+  <rect x="752.84" y="196.20739783556775" width="15.120000000000001" height="223.79260216443225" class="bar"/>
+  <rect x="769.64" y="251.90841544177033" width="15.120000000000001" height="168.09158455822967" class="bar"/>
+  <rect x="786.44" y="282.08609271523176" width="15.120000000000001" height="137.91390728476821" class="bar"/>
+  <rect x="803.24" y="317.8105314165724" width="15.120000000000001" height="102.18946858342757" class="bar"/>
+  <rect x="820.0400000000001" y="357.2007753190115" width="15.120000000000001" height="62.79922468098853" class="bar"/>
+  <rect x="836.84" y="371.58940397350995" width="15.120000000000001" height="48.41059602649007" class="bar"/>
+  <rect x="853.6400000000001" y="397.0303666612825" width="15.120000000000001" height="22.969633338717493" class="bar"/>
+  <rect x="870.4399999999999" y="410.15587142626396" width="15.120000000000001" height="9.844128573736068" class="bar"/>
+  <rect x="887.24" y="415.2907446293006" width="15.120000000000001" height="4.7092553706994025" class="bar"/>
+  <rect x="904.04" y="418.5446616055564" width="15.120000000000001" height="1.4553383944435472" class="bar"/>
+  <text x="80.0" y="440" class="grid-text">-29</text>
+  <text x="180.8" y="440" class="grid-text">-20</text>
+  <text x="281.6" y="440" class="grid-text">-12</text>
+  <text x="382.4" y="440" class="grid-text">-3</text>
+  <text x="483.2" y="440" class="grid-text">6</text>
+  <text x="584.0" y="440" class="grid-text">15</text>
+  <text x="684.8" y="440" class="grid-text">23</text>
+  <text x="785.6" y="440" class="grid-text">32</text>
+  <text x="886.4" y="440" class="grid-text">41</text>
+  <line x1="612.9770250248811" y1="80" x2="612.9770250248811" y2="420" class="mean-line"/>
+  <text x="617.9770250248811" y="100" font-size="12" fill="red">Mean: 17.04°C</text>
+</svg>

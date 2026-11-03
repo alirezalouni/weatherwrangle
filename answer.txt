@@ -1,0 +1,123 @@
+/Users/alirezalouni/Desktop/interviews/weatherwrangle/answers.py:272: DeprecationWarning: datetime.datetime.utcfromtimestamp() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.fromtimestamp(timestamp, datetime.UTC).
+  dt_obj = datetime.datetime.utcfromtimestamp(day["dt"])
+/Users/alirezalouni/Desktop/interviews/weatherwrangle/answers.py:322: DeprecationWarning: datetime.datetime.utcfromtimestamp() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.fromtimestamp(timestamp, datetime.UTC).
+  dt_obj = datetime.datetime.utcfromtimestamp(day["dt"])
+============================================================
+Q1: How many city records are in the file?
+============================================================
+Method 1 (for loop with line count): 22635
+Method 2 (list comprehension with json.loads): 22635
+
+✓ Both methods agree: 22635 city records
+
+============================================================
+Q2: How many unique countries are represented?
+============================================================
+Method 1 (Plain Python - set): 243
+Method 2 (Plain Python - set comprehension): 243
+
+✓ Both methods agree: 243 unique countries
+
+No empty country values found.
+
+============================================================
+Q3: Which 10 countries have the most cities in this file?
+============================================================
+Method 1 (dictionary with sets):
+   1. US:  2924 cities
+   2. IN:  2393 cities
+   3. BR:  1194 cities
+   4. DE:   985 cities
+   5. RU:   953 cities
+   6. CN:   788 cities
+   7. JP:   752 cities
+   8. GB:   672 cities
+   9. IT:   670 cities
+  10. FR:   610 cities
+
+Method 2 (from pre-loaded records):
+   1. US:  2924 cities
+   2. IN:  2393 cities
+   3. BR:  1194 cities
+   4. DE:   985 cities
+   5. RU:   953 cities
+   6. CN:   788 cities
+   7. JP:   752 cities
+   8. GB:   672 cities
+   9. IT:   670 cities
+  10. FR:   610 cities
+
+✓ Both methods agree
+
+============================================================
+Q4: Explode each city's daily forecast array into one row per (city, country, date).
+============================================================
+Method 1 (iterate and build rows): 368,909 rows
+  Sum of all data array lengths: 368,909
+Method 2 (list comprehension with nested loop): 368,909 rows
+
+✓ Both methods agree: 368,909 total rows
+✓ Row count matches sum of data array lengths: 368,909
+
+============================================================
+Q5: Top 10 hottest cities by mean temp.day across forecast horizon
+============================================================
+Method 1 (iterate and calculate means):
+   1. Dourbali                  (TD)   39.08°C
+   2. Maiduguri                 (NG)   38.75°C
+   3. Magumeri                  (NG)   38.75°C
+   4. Damaturu                  (NG)   38.74°C
+   5. Massakory                 (TD)   38.69°C
+   6. Ayorou                    (NE)   38.68°C
+   7. Potiskum                  (NG)   38.62°C
+   8. Daura                     (NG)   38.62°C
+   9. Bogo                      (CM)   38.59°C
+  10. Geidam                    (NG)   38.58°C
+
+Method 2 (from pre-loaded records):
+   1. Dourbali                  (TD)   39.08°C
+   2. Maiduguri                 (NG)   38.75°C
+   3. Magumeri                  (NG)   38.75°C
+   4. Damaturu                  (NG)   38.74°C
+   5. Massakory                 (TD)   38.69°C
+   6. Ayorou                    (NE)   38.68°C
+   7. Potiskum                  (NG)   38.62°C
+   8. Daura                     (NG)   38.62°C
+   9. Bogo                      (CM)   38.59°C
+  10. Geidam                    (NG)   38.58°C
+
+✓ Both methods agree
+
+============================================================
+Q6: Tidy table for San Francisco, California (city.id = 5391959)
+============================================================
+Method 1 (Plain Python - iterate and extract):
+  City: San Francisco, US
+  Mean temp (day): 15.03°C
+  Rows: 16
+
+  Date         Temp Min (°C)  Temp Max (°C)  Humidity  Weather
+  -----------------------------------------------------------------
+  2017-03-13        9.81         18.95        67%  sky is clear
+  2017-03-14        7.45         25.93        55%  sky is clear
+  2017-03-15        8.63         22.75        56%  sky is clear
+  2017-03-16       10.18         18.75        NaN  light rain
+  2017-03-17        6.50         18.56        NaN  light rain
+  2017-03-18        9.20         16.79        NaN  light rain
+  2017-03-19       10.50         18.08        NaN  light rain
+  2017-03-20        6.82         18.35        NaN  light rain
+  2017-03-21        4.57         16.67        NaN  sky is clear
+  2017-03-22        3.85         16.50        NaN  light rain
+  2017-03-23        5.21         12.25        NaN  moderate rain
+  2017-03-24        8.01         15.06        NaN  moderate rain
+  2017-03-25        5.45         13.59        NaN  light rain
+  2017-03-26        8.27         13.70        NaN  moderate rain
+  2017-03-27        5.55         15.79        NaN  sky is clear
+  2017-03-28        4.13         19.30        NaN  sky is clear
+
+Method 2 (Plain Python - from pre-loaded records):
+  City: San Francisco, US
+  Mean temp (day): 15.03°C
+  Rows: 16
+
+✓ Both methods agree
